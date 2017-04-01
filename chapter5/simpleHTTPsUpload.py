@@ -7,6 +7,9 @@ and HEAD requests in a fairly straightforward manner.
 
 Modified by Sparc Flow (@hacklikeapornstar) to support HTTPS - April 2017
 
+generate server.xml with the following command:
+openssl req -new -x509 -keyout server.pem -out server.pem -days 365 -nodes
+
 """
 
 
@@ -289,7 +292,7 @@ class SimpleHTTPRequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
         })
 
 if __name__ == '__main__':
-    httpd = BaseHTTPServer.HTTPServer(('0.0.0.0', 4443), SimpleHTTPRequestHandler)
+    httpd = BaseHTTPServer.HTTPServer(('0.0.0.0', 443), SimpleHTTPRequestHandler)
     httpd.socket = ssl.wrap_socket (httpd.socket, certfile='./server.pem', server_side=True)
-    print "Listening on port 4443..."
+    print "Listening on port 443..."
     httpd.serve_forever()
