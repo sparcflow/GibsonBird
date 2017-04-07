@@ -7,9 +7,10 @@ and HEAD requests in a fairly straightforward manner.
 
 Modified by Sparc Flow (@hacklikeapornstar) to support HTTPS - April 2017
 
-generate server.xml with the following command:
+generate server.pem with the following command:
 openssl req -new -x509 -keyout server.pem -out server.pem -days 365 -nodes
-
+usage : 
+   python simpleHTTPsUpload.py
 """
 
 
