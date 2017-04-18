@@ -4,7 +4,7 @@
 # A normal user shouln't have write permission in that folder, but that is not always the case.
 # This script lists default ACL for the "BUILTIN\users" group looking for write/createFiles & execute authorizations
 #
-# // Sparc Flow 2017-04-15 
+# @Author: Sparc Flow in "How to Hack a Fashion Brand"
 #
 # NOTE: change the group and root_folder variables to suit your needs
 
