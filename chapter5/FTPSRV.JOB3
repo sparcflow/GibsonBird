@@ -1,0 +1,12 @@
+//FTPSRV1  JOB
+//PDS     DD  DSN=FTPSRV.PDS(NEWMEM),DISP=(NEW,CATLG),    
+//            SPACE=(TRK,(1,1,24)),RECFM=U                      
+//
+//STEP01 EXEC PGM=IKJEFT01
+//SYSTSIN DD *
+ ex 'FTPSRV.ELV.SVC' 'DSN=FTPSRV.PDS SVC=226'
+/*
+//SYSIN   DD DUMMY
+//SYSTSPRT DD DSN=FTPSRV.OUTPUT3,
+//            DISP=(NEW,CATLG),
+//            SPACE=(TRK,1)
