@@ -1,6 +1,7 @@
 #
 # Fileless persistence technique using WMI filters
-# Replace $payload with your own Empire stager
+# Every 30 minutes this code will download a file called script.txt from a remote connection and execute its content
+# If you want to execute a stager, simply put the code in script.txt on your remote server
 #
 # @Author: Sparc Flow in "How to Hack a Fashion Brand"
 #
